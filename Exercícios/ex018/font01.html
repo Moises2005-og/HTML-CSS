@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas
+            cm, mm, in, px, pt
+
+            Medidas relativas
+            em, rem, vw, vh, %
+            16px geralmente valem 1em
+            */
+
+        font-size: 1em;
+        }
+
+        h1 {
+            /*shorthand
+            font-style->font-weight->font-size->font-family
+
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+        <h1>Trabalhando com fontes</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur ex, sequi possimus atque delectus iusto labore consectetur, repellendus ipsam repellat quas ipsum eos voluptatibus repudiandae vel, eaque alias saepe sapiente! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque iste architecto quos ullam eos hic delectus eius similique nobis magni est dolore iusto necessitatibus consectetur modi, sit exercitationem accusantium saepe?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium et deleniti, provident odio quam eaque. Amet repellat ab provident, ad reprehenderit iure optio sunt quisquam facere voluptatibus quas libero? Ea.</p>
+        <h2>Subtítulo de exercício</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum cum natus hic et quos obcaecati maxime sed reiciendis, error doloribus vel alias necessitatibus voluptatum ipsum laudantium quod praesentium nemo! Architecto?</p>
+</body>
+</html>

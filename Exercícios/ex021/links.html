@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+        Seletores personalizados
+        # = ID
+        . = Class
+        : = Pseudoclass
+        :: = pseudo-element
+        > = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgba(202, 105, 105, 0.836);  
+        }
+
+        .especial::before {
+            content: '->';
+            color: red;
+        }
+
+        .especial::after {
+            content: '<-';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="#">Repositorio do github</a></li>
+        <li><a href="#" class="especial">Canal do youtube</a></li>
+        <li><a href="#" class="especial">Site do cursoemvideo</a></li>
+    </ul>
+</body>
+</html>
